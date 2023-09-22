@@ -1,23 +1,19 @@
-import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
-import { useAuth } from "~/lib/firebase";
+
+import { login } from '@inrupt/solid-client-authn-browser';
 
 export const SignInButton = () => {
+  const oidcIssuer = "https://www.frank2022.buzz"
   const handleClick = () => {
-    const provider = new GoogleAuthProvider();
-    const auth = useAuth();
-    // @see https://firebase.google.com/docs/auth/web/google-signin
-    auth.languageCode = "ja";
-
-    signInWithRedirect(auth, provider);
+    login({
+      oidcIssuer,
+      clientName: 'Tian&Solid Demo',
+      redirectUrl: window.location.href,
+    });
   };
 
   return (
-    <button
-      onClick={handleClick}
-      type="button"
-      className="btn btn-primary normal-case min-w-60"
-    >
-      Sign In With Google
-    </button>
+    <div className="flex flex-row h-10 text-center item-center gap-4">
+    <div className="hidden md:block px-4 middle py-2 bg-blue-500 text-white rounded hover:bg-opacity-80" onClick={handleClick}>Sign In</div>
+  </div>
   );
 };

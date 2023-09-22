@@ -1,5 +1,7 @@
 import {createContext, ReactNode, useContext, useReducer} from "react";
-import { User } from "firebase/auth";
+type User = {
+  webId: string,
+}
 
 type AuthActions = { type: 'SIGN_IN', payload: { user: User } } | {type: 'SIGN_OUT'}
 
