@@ -2,7 +2,7 @@
 import { login } from '@inrupt/solid-client-authn-browser';
 
 export const SignInButton = () => {
-  const oidcIssuer = "https://www.frank2022.buzz"
+  const oidcIssuer = "https://ff02e105264e4fb0b2c151ac679ea2e6.container2.titannet.io"
   const handleClick = () => {
     login({
       oidcIssuer,

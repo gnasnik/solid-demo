@@ -540,6 +540,11 @@
     node-fetch "^2.6.7"
     undici "^5.19.1"
 
+"@inrupt/vocab-common-rdf@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.npmmirror.com/@inrupt/vocab-common-rdf/-/vocab-common-rdf-1.0.5.tgz#e5aac57e85da55823bd54f5dfe419c05a49ffcac"
+  integrity sha512-onrehQte8m0XW83WwM6T4o5WgmYGzdYUCef6FDjMKfQCF64FnARFNn5fYhKodimBaAOFKhuJ3vw1NBZV/EYqJw==
+
 "@jridgewell/gen-mapping@^0.3.0":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"
